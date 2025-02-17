@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>El-Madinuh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="shortcut icon" type="image/png" href="img/bg-hero.jpg">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    
+                    <!-- زر القائمة (على اليسار) -->
+                    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    
+                    <!-- القائمة في المنتصف -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                            <a href="about.html" class="nav-item nav-link">من نحن</a>
+                            <a href="service.html" class="nav-item nav-link">خدماتنا</a>
+                            <a href="menu.html" class="nav-item nav-link">قائمة الطعام</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الصفحات</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="booking.html" class="dropdown-item">الحجز</a>
+                                    <a href="team.html" class="dropdown-item">فريقنا</a>
+                                    <a href="testimonial.html" class="dropdown-item">آراء العملاء</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">اتصل بنا</a>
+                        </div>
+                    </div>
+            
+                    <!-- الشعار (على اليمين) -->
+                    <a href="" class="navbar-brand p-0 order-2">
+                        <h1 class="text-primary m-0">عم شلتت <i class="fa fa-pizza-slice"></i></h1>
+                    </a>
+                    
+                </div>
+            </nav>
+            
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">قائمة الطعام</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="#">الصفحات</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">قائمة الطعام</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+       <!-- Menu Start -->
+       <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">قائمة الطعام</h5>
+                <h1 class="mb-5">الأصناف الأكثر شيوعًا</h1>
+            </div>
+            <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                            <i class="fa fa-coffee fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body">قائمة الطعام</small>
+                                <h6 class="mt-n1 mb-0">الأصناف الأكثر شيوعًا</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                            <i class="fa fa-hamburger fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body">خاص</small>
+                                <h6 class="mt-n1 mb-0">الغداء</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                            <i class="fa fa-utensils fa-2x text-primary"></i>
+                            <div class="ps-3">
+                                <small class="text-body">رائع</small>
+                                <h6 class="mt-n1 mb-0">العشاء</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>الفطيره المشلتته رقم 1 في مصر🔥🔥❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>سدق كيري غرقانه في الجبنه المونزريلا😂❤️❤️</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">نكهة لذيذة من الدجاج المشوي مع الخضار الطازجة</small>
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+        <!-- Menu End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 text-end">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-end text-primary fw-normal mb-4">الشركة</h4>
+                        <a class="btn btn-link" href="">من نحن</a>
+                        <a class="btn btn-link" href="">اتصل بنا</a>
+                        <a class="btn btn-link" href="">الحجز</a>
+                        <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                        <a class="btn btn-link" href="">الشروط والأحكام</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-end text-primary fw-normal mb-4">تواصل معنا</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt ms-3"></i>123 شارع، نيويورك، الولايات المتحدة</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt ms-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope ms-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2 justify-content-end">
+                            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-end text-primary fw-normal mb-4">ساعات العمل</h4>
+                        <h5 class="text-light fw-normal">الإثنين - السبت</h5>
+                        <p>09 صباحًا - 09 مساءً</p>
+                        <h5 class="text-light fw-normal">الأحد</h5>
+                        <p>10 صباحًا - 08 مساءً</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-end text-primary fw-normal mb-4">النشرة الإخبارية</h4>
+                        <p>اشترك معنا للحصول على آخر العروض والتحديثات.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5 text-end" type="text" placeholder="أدخل بريدك الإلكتروني">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 start-0 mt-2 ms-2">اشترك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">اسم موقعك</a>، جميع الحقوق محفوظة.
+                            <br> تصميم بواسطة <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-start">
+                            <div class="footer-menu">
+                                <a href="">الرئيسية</a>
+                                <a href="">سياسة الكوكيز</a>
+                                <a href="">المساعدة</a>
+                                <a href="">الأسئلة الشائعة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
